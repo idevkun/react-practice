@@ -4,7 +4,7 @@ import App from './App';
 import './style.css';
 
 ReactDOM.render(
-  <App counter= {0} />,
+  <App />,
   document.getElementById('root')
 );
 
