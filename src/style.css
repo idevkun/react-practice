@@ -1,109 +1,59 @@
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
+  font-family: "Karla", sans-serif;
   margin: 0;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  color: #2b283a;
 }
 
-nav {
+main {
+  padding: 36px;
+}
+
+.header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 55px;
-  background: #f55a5a;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  padding: 20px;
 }
 
-.nav-text {
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.75rem;
   font-weight: 500;
-  font-size: 14.4608px;
-  line-height: 18px;
-  letter-spacing: -0.075em;
-  margin-left: 7px;
-  color: #ffffff;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 45px;
-  padding-right: 40px;
-  padding-left: 40px;
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
 }
 
-.main .card:not(:last-child) {
-  border-bottom: 1px solid #F5F5F5;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 470px;
-  margin-bottom: 18px;
-  padding-bottom: 18px;
-}
-
-.card__img {
-  display: block;
-  width: 125px;
-  height: 168px;
+.form--input {
+  font-family: "Karla", sans-serif;
   border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
 }
 
-.card__box {
-  margin-left: 20px;
-  font-weight: 400;
-  font-size: 10.24px;
-}
-.card__geo {
-  display: flex;
-  margin-bottom: 4px;
-}
-.card__geo-country {
-  margin-right: 12px;
-  line-height: 12px;
-  padding-left: 11px;
-  position: relative;
-}
-
-.card__geo-country::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  width: 7px;
-  height: 10px;
-  background-image: url("../public/images/geo.svg");
-}
-
-.card__geo-link {
-  color: #918e9b;
-}
-
-.card__title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  color: #2b283a;
-  margin-bottom: 7px;
-}
-
-.card__date {
-  font-weight: 700;
-  font-size: 10.24px;
-  line-height: 12px;
-  color: #2b283a;
-  margin-bottom: 9px;
-}
-
-.card__desc {
-  font-weight: 400;
-  font-size: 10.24px;
-  line-height: 150%;
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
